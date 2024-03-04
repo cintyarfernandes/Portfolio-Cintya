@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cintya Rodrigues">
+    <title>Portfólio Cintya</title>
+
+    <!--import carrossel-->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- fim import carrossel-->
+
+
+    <!-- inicio import icon logo-->
+    <link rel="icon" type="image/x-icon" href="android-chrome-512x512.png">
+    <!-- fim import icon logo-->
+
+       <!-- inicio import css e scss-->
+       <link rel="stylesheet" href="/css/hamburgers.css">
+       <link rel="stylesheet" href="/css/main.css">
+       <!-- fim import css e scss-->
+
+    <!--import icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/41ca728b8c.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--fim import icones-->
+ 
+  </head>
+
+  <body>
+
+    <!--INICIO MENU MOBILE-->
+
+    <div class="body-menu-mobile">
+      <article class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="ul-menu-mobile">
+              <li class="li-menu-mobile">
+                  <a class="a-menu-mobile" href="index.html" onclick="closeMenu()">Início</a>
+              </li>
+              <li class="li-menu-mobile">
+                  <a class="a-menu-mobile" href="#imagem-eu" onclick="closeMenu()">Sobre</a>
+              </li>
+              <li class="li-menu-mobile">
+                  <a class="a-menu-mobile" href="#my-projetos" onclick="closeMenu()">Projeto</a>
+              </li>
+              <li class="li-menu-mobile">
+                  <a class="a-menu-mobile" href="#skills" onclick="closeMenu()">Hard Skills </a>
+              </li>
+            
+          </ul>
+      </article>
+  
+      <header class="header-menu-mobile">
+          <div class="container-menu-mobile">
+              <a href="#" class="a-menu-mobile">
+                  <img class="img-menu-mobile" src="assets/logo-me.png" alt="">
+              </a>
+              <button id="js-btn-menu" class="hamburger hamburger--spin button-menu-mobile" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+          </div>
+      </header>
+  
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const btnMenu = document.getElementById('js-btn-menu');
+            const navbarCollapse = document.getElementById('navbar-collapse');
+    
+            btnMenu.addEventListener('click', () => {
+                document.documentElement.classList.toggle('opened-menu');
+                btnMenu.classList.toggle('is-active');
+                navbarCollapse.classList.toggle('collapse-show');
+            });
+        });
+    
+        function closeMenu() {
+            document.documentElement.classList.remove('opened-menu');
+            document.getElementById('js-btn-menu').classList.remove('is-active');
+            document.getElementById('navbar-collapse').classList.remove('collapse-show');
+        }
+    </script>
+
+  </div>
+
+<!--FIM MENU MOBILE-->
+
+
+
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img id="index.html" src="assets/logo-me.png" alt="logo cintya"/>
+          </a>
+        </div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a class="scale" href="#index.html">Início</a></li>
+            <li><a class="scale" href="#txt-sobre">Sobre</a></li>
+            <li><a class="scale" href="#projeto">Projetos</a></li>
+            <li><a class="scale" href="#skills">Hard Skills</a></li>
+          </ul>
+        </nav>
+
+        <div class="botao-contato">
+          <a href="https://contate.me/cintyarfernandes" target="_blank">
+            <button>Contato</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>Olá, seja bem vindo ao meu perfil</h1>
+              <p>
+                Desenvolvedora front end com poder de dar vida às ideias
+                através de código. Meu trabalho é a ponte entre design criativo
+                e a funcionalidade eficaz, criando interfaces digitais
+                que não apenas impressionam visualmente, mas também cativam os 
+                usuários com uma experiência intuitiva e envolvente.
+                Constantemente explorando novas técnicas, frameworks e ferramentas para aprimorar meu ofício
+                e manter-me atualizada as últimas tendências e melhores práticas do mercado.
+    
+              </p>
+              <div class="botao-curriculo">
+                  <a href="CURRICULO CINTYA.pdf" download="CURRICULO CINTYA.pdf" > 
+                    
+                  <button> Download CV</button>
+
+                </a>
+              </div>
+            </div> <!--txt-topo-site-->
+            <div class="img-top">
+              <img src="assets/foto-cintya.png" />
+            </div>
+          </div> <!--flex-->
+        </div> <!--interface-->
+      </section><!--fim topo-do-site-->
+
+      <section class="especialidades">
+        <div class="interface">
+          <h2 class="titulo titulo-hard" id="skills">HARD <span>SKILLS</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+                <i class="fa-brands fa-html5"></i>
+              <h3>HTML</h3>
+            </div>
+
+            <div class="especialidades-box">
+                <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS</h3>
+            </div>
+
+              <div class="especialidades-box">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                </div>
+              <div class="especialidades-box">
+                <i class='bx bxl-typescript'></i>
+                <h3>TypeScript</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="especialidade">
+        <div class="interface">
+            <div class="flex">
+
+                <div class="especialidade-box">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React.JS</h3>
+                </div>
+
+                <div class="especialidade-box">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h3>Node.JS</h3>
+                </div>
+
+                <div class="especialidade-box">
+                  <i class='bx bxl-mongodb'></i>
+                    <h3>MongoDB</h3>
+                </div>
+
+                <div class="especialidade-box">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre" id="imagem-eu">
+                    <img src="assets/Cintyaa.png" >
+                </div>
+            <div class="txt-sobre">
+                <h2 id="txt-sobre">Cintya Rodrigues</h2> <span>DESENVOLVEDORA FRONT END</span>
+                <p>
+                    Olá, meu nome é Cintya, tenho 28 anos e resido em Brasília - DF. 
+                    Sou graduada em Análise e Desenvolvimento de Sistemas. Possuo 
+                     conhecimentos em HTML, CSS, JAVASCRIPT, REACT e GITHUB. Atualmente 
+                     desenvolvo projetos como Freelance usando essas tecnologias. 
+                </p>
+                <p>
+                    Tenho espanhol avançado e estou cursando o 4º semestre de inglês. Sou comunicativa, 
+                     responsável e dedicada. Possuo habilidade para adaptar-me a novas mudanças e
+                    aprender novas habilidades.
+                </p>
+                <div class="btn-social">
+                    <a href="https://github.com/cintyarfernandes" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/cintya-rodrigues-fernandes/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                    <a href="https://contate.me/cintyarfernandes" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+                  </div>
+
+        </div> <!--txt-sobre-->
+        </div> <!--flex-->
+        </div> <!--interface-->
+    </section>
+
+ 
+
+         <!--inicio do carrossel portifolio
+
+        <h2  class="titulo-carrossel titulo-desktop">MEU <span>PORTFÓLIO</span></h2>-->
+
+
+    
+        <div class="body-pai">
+
+            <div class="swiper mySwiper" id="my-projetos">
+                <h2 class="titulo-carrossel titulo-desktop" >MEUS <span>PROJETOS</span></h2>
+               <div class="swiper-wrapper">
+          
+                <div class="swiper-slide">
+                  <img  class="img-carrossel" src="assets/carrossel img.png" />
+                  <h4 class="titulo-carrossel">CARROSSEL DE IMAGENS</h4>
+                  <p class="paragrafo-carrossel">Desenvolvimento de carrossel animado, moderno e estilizado</br></br></p>
+                  <a href="https://seja-saudavel.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/jogo-da-forca.jpeg" />
+                  <h4 class="titulo-carrossel">JOGO DA FORCA</h4>
+                  <p class="paragrafo-carrossel"> Jogo em que o jogador tem que acertar qual é a palavra proposta, tendo como dica o número de letras e o tema ligado à palavra </br></p>
+                  <a href="https://jogoda-forca.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/buscaCep.png" />
+                  <h4 class="titulo-carrossel" >BUSCADOR DE CEP</h4>
+                  <p class="paragrafo-carrossel">Aplicação que busca endereço através de campo</br></br></p>
+                  <a href="https://buscarcepgeral.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/jogo.png" />
+                  <h4 class="titulo-carrossel">PEDRA, PAPEL E TESOURA</h4>
+                  <p class="paragrafo-carrossel">Famoso jogo de pedra, papel ou tesoura, no qual você escolhe
+                      umas das três opções para jogar contra a máquina. </br></br></p>
+                  <a href="https://jogo-pedrapapel-tesoura.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/list.png" />
+                  <h4 class="titulo-carrossel">CHECK LIST</h4>
+                  <p class="paragrafo-carrossel">Uma aplicação para garantir que todas as 
+                    tarefas de um processo ou projeto sejam concluídas</br></br></p>
+                  <a href="https://check-listt.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/previsao do tempo.jpeg" />
+                  <h4 class="titulo-carrossel">PREVISÃO DO TEMPO</h4>
+                  <p class="paragrafo-carrossel">Aplicação que trás a previsão do tempo ao digitar a
+                    localidade desejada </br></br></p>
+                  <a href="https://previsaodootempo.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+                <div class="swiper-slide">
+                  <img class="img-carrossel" src="assets/sorteadorNumero.png" />
+                  <h4 class="titulo-carrossel">SORTEADOR DE NÚMERO</h4>
+                  <p class="paragrafo-carrossel"> Ferramenta desenvolvida para fazer sorteio de um número de 
+                    forma rápida e simples
+                      tela.</p>
+                  <a href="https://sorteador-de-numero.netlify.app" target="_blank" class="chamar"><button>Ver Projeto</button></a>
+                </div>
+          
+              
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                          pauseOnMouseEnter: true,
+                        },
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              });
+            </script>
+          
+
+
+        <!--fim do carrossel portifolio-->
+
+  <section class="formulario">
+    <div class="interface">
+      <h2 class="titulo">FALE <span>COMIGO</span></h2>
+    </div>
+    <form method="post" action="https://formsubmit.co/cintyarfernandes@gmail.com"> 
+      <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" id="email" placeholder="Seu email" required>
+      <input type="tel" name="telefone" id="telefone" placeholder="Seu celular: (DDD)X XXXX-XXXX" 
+      onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true;
+       else return false;" maxlength="11">
+      <textarea name="" id="" name="mensagem" placeholder="Sua mensagem:"></textarea>
+
+      <div class="btn-enviar"> <input type="submit" value="Enviar"></div>
+
+      <input type="hidden" name="_subject" value="Novo Contato!">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+
+  </section>
+
+<!-- inicio do botao subir topo -->
+    
+<button id="btnTop" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+    // Função para rolar a página para o topo
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Exibir ou ocultar o botão com base na posição de rolagem
+    window.onscroll = function() {
+        var btnTop = document.getElementById("btnTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    };
+</script>
+
+
+<!-- fim do botao subir topo -->
+
+
+  <footer>
+    <div class="interface">
+      <div class="line-footer">
+          <div class="flex">
+          <div class="logo-footer">
+            <img src="assets/logo-me.png">
+          </div>
+          <div class="btn-social">
+            <a href="https://github.com/cintyarfernandes" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+            <a href="https://www.linkedin.com/in/cintya-rodrigues-fernandes/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
+            <a href="https://contate.me/cintyarfernandes" target="_blank"><button><i class="fa-brands fa-whatsapp"></i></button></a>
+        </div>
+     </div>
+      <div class="line-footer">
+        <p><i class="bi bi-envelope-at-fill"></i><a href="mailto:cintyarfernandes@gmail.com">
+          cintyarfernandes@gmail.com
+        </a></p>
+      </div>
+     </div>
+    
+  </footer>
+
+    </main>
+
+  </body>
+</html>

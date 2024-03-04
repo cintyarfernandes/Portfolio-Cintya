@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+     /*font-family: "Montserrat", sans-serif;*/
+}
+
+
+body{
+    background-color: #CF97A0;
+    height: 100vh;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto; 
+}
+
+img{
+    width: 265px;
+}
+
+header{
+    padding: 40px 7%;
+    margin-right: 13px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.scale:hover{
+    color: #C61883;
+    transform: scale(1.20);
+}
+
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{ 
+    display: inline-block;
+    padding: 0 30px;
+}
+
+ .botao-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.botao-contato button:hover{
+    box-shadow: 0px 0px 10px #C61883;
+}
+
+
+.botao-curriculo button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 50px;
+
+}
+
+.botao-curriculo button:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px  17px #C61883;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+
+.topo-do-site{
+    padding: 40px 7%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /*distância entre os itens*/
+}
+
+.topo-do-site h1{
+    line-height: 40px; /*diminuiu o espaço entre as linhas do texto*/
+    font-size: 42px;
+}
+
+section.topo-do-site p{
+    margin: 40px 0;
+ 
+}
+
+.topo-do-site .img-top img{
+    position: relative;
+    animation: flutuarImg 2s ease-in-out infinite alternate ;
+}
+
+@keyframes flutuarImg { /*aqui trabalha com a animação*/
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*especialidades*/
+
+section.especialidades{
+    padding: 40px 7%;
+}
+
+section.especialidades .flex{
+   gap: 30px;
+}
+
+
+h2.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.tituloo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.especialidades .especialidades-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border: 1px white;
+    margin-top: 45px;
+    width: 265px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #f1b2bd;
+    transition: .2s;
+}
+
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #C61883;
+}
+
+
+
+.especialidades .especialidades-box i{
+   font-size: 90px;
+   color: #C61883;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 22px;
+    margin: 15px 0;
+    
+ }
+
+
+ /*especialidade */
+
+section.especialidade{
+   padding: 40px 7%;
+}
+
+section.especialidade .flex{
+    gap: 30px;
+}
+
+.especialidade .especialidade-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-top: -50px;
+    border: 1px white;
+    width: 265px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #f1b2bd;
+    transition: .2s;
+}
+
+.especialidade .especialidade-box i{
+    font-size: 90px;
+    color:  #C61883;
+}
+.especialidade .especialidade-box h3{
+    font-size: 22px;
+    margin: 15px 0;
+    
+ }
+
+span{
+    color:  #C61883;
+}
+
+.especialidade .especialidade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #C61883;
+}
+
+/*Estilo do sobre*/
+section.sobre{
+    padding:  40px 7%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+
+}
+
+.btn-social button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    background-color: #f1b2bd;
+    cursor: pointer;   
+}
+
+.btn-social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #C61883;
+}
+
+
+
+section.portfolio .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+section.portfolio{
+    padding: 40px 7%;
+    box-shadow: 0px 0 18px 2px #c6188350;
+    margin-top: 50px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600px;
+    color: white;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 0.7;
+}
+
+section.portfolio h2{
+    margin-bottom: 40px;
+}
+
+section.formulario{
+    padding: 40px 4%;
+
+
+}
+
+section.formulario h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   /*elementos um embaixo do outro*/
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: none;
+    padding: 20px 15px;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .btn-enviar{
+    text-align: center;
+    margin-top: 20px;
+}
+
+form .btn-enviar input{
+    width: 95px;
+    background-color:  #C61883;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+form .btn-enviar input:hover{
+        box-shadow: 0 0 17px black;
+        transform: scale(1.0);
+}
+
+/*Estilo do rodapé*/
+
+footer{
+    padding: 10px 7%;
+    box-shadow: 0 0 12px #f1b2bd;
+
+}
+
+footer .flex{
+    justify-content: space-between;   
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
+
+footer .line-footer p{
+    color: #C61883; 
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer .line-footer p i{
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: black; 
+    padding-left: 5px;
+}
+
+
+/* INICIO ESTILIZAÇÃO CARROSSEL PORTFOLIO */
+
+.titulo-desktop{
+    color: black;
+    font-size: 42px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.titulo-desktop span{
+    color: #C61883;
+}
+
+
+.swiper {
+    width: 1100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 17px rgba(192, 192, 192, 0.753);
+    height: 450px;
+    border-radius: 20px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .swiper-slide h4{
+      text-align: center;
+      font-size: 20;
+      font-weight: 600px;
+      padding-top: 15px;
+  
+  }
+  
+  .swiper-slide p{
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  
+  .swiper-slide a {
+      align-items: center;
+      }
+  
+  .swiper-slide a button{
+      text-align: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 150px;
+      height: 40px;
+      border-radius: 7px;
+      cursor: pointer;
+      background-color: #C61883;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600px;
+      border: none;
+      }
+  
+      button:hover{
+          transform: scale(1.08);
+          box-shadow: 0 0 17px black;
+      }
+  
+      .swiper-pagination-bullet{
+         background: white;
+         height: 15px;
+          width: 15px;
+          border-radius: 25px;
+      }
+
+
+/* FIM ESTILIZAÇÃO CARROSSEL PORTFOLIO */
+
+
+
+/*INICIO ESTILIZAÇÃO MENU MOBILE*/
+
+.body-menu-mobile{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*FIM ESTILIZAÇÃO MENU MOBILE*/
+
+/* FIM ESTILIZAÇÃO CARROSSEL PORTFOLIO */
+
+
+/*Botão para subir página desktop*/
+.botao-topo{
+    text-decoration: none;
+    background-color: #C61883;
+    font-size: 30px;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    left: 1310px;
+    bottom: 10px;
+}
+/*FIM Botão para subir página desktop*/
+
+
+
+/* INICIO ESTILIZAÇÃO MENU MOBILE */
+
+.container-menu-mobile{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.header-menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #C61883;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128 ,128, 0.177);
+    z-index: 2023;
+    .container-menu-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+article{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #C61883;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 40px 15px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2023;
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        
+        li{
+            a{
+                color: white;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.opened-menu{
+    article{
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
+
+.hamburger{
+    padding: 0;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: white;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+background-color: white;
+}
+
+
+/* FIM ESTILIZAÇÃO MENU MOBILE */
+
+/* INICIO BOTAO IR PARA O TOPO*/
+
+#btnTop {
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C61883;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+/*cor da seta*/
+#btnTop i{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#btnTop:hover {
+    background-color: #C61883;
+}
+
+
+@media screen and (max-width: 1070px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .menu-desktop, .botao-contato{
+        display: none;
+    }
+
+    
+    .topo-do-site h1{
+        font-size: 32px;
+    }
+
+    .topo-do-site{
+        padding: 20px 8%;
+    }
+
+    
+    .topo-do-site .img-top img{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 10px; /*distância entre os itens*/
+    }
+
+    .btn-social button{
+        margin-top:10px ;
+    }
+   
+
+/* INICIO ESTILO HARD SKILLS MOBILE */
+
+h2.titulo-hard {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2.titulo-hard span {
+    color: #C61883;
+}
+
+section.especialidades{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ section.especialidades .flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.especialidades .especialidades-box{
+align-items: center;
+justify-content: center;
+color: black;
+margin: 0;
+border: 1px solid rgba(255, 255, 255, 0.034);
+width: 152px;
+height: 152px;
+border-radius: 10px;
+background-color: #f1b2bd;
+transition: .2s;
+}
+
+.especialidade .especialidade-box i {
+    font-size: 70px;
+    color: #C61883;
+}
+
+.especialidade .especialidade-box h3 {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+section.especialidade{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.especialidade .flex{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+.especialidade .especialidade-box{
+align-items: center;
+justify-content: center;
+color: black;
+margin: 0;
+border: 1px solid rgba(255, 255, 255, 0.034);
+width: 152px;
+height: 152px;
+border-radius: 10px;
+background-color: #f1b2bd;
+transition: .2s;
+}
+
+.especialidade{
+margin-top: -50px;
+}
+
+
+.especialidade .especialidade-box i {
+    font-size: 80px;
+    color: #C61883;
+}
+
+.especialidade .especialidade-box h3 {
+    font-size: 22px;
+    margin: 15px 0;
+
+}
+
+/* FIM ESTILO HARD SKILLS MOBILE */
+
+     /*sessão portfólio*/
+
+     section.portfolio{
+        padding: 80px 4%;
+     }
+
+     .img-port{
+        width: 100%;
+        max-width: 360px;
+    }
+
+    section.portfolio .flex{
+        gap: 10px;
+     }
+    
+     footer .flex{
+        flex-direction: column; 
+        gap: 20px;
+    }
+    
+    footer .line-footer{
+    text-align: center;
+    }
+
+    footer .line-footer p{
+        margin-left: 40px;
+    }
+    .interface .logo img{
+        width: 200px;
+        display: none;
+    }
+    
+
+
+/*CARROSSEL RESPONSIVEL MOBILE*/
+
+.div-meu-carrossel{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    padding-bottom: 0;
+
+}
+
+/*titulo meu portfolio no mobile*/
+.tituloo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 60px; /*ESPAÇO TITULO MEU PORTFOLIO */
+}
+
+.card{
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 480px;
+    width: 296px;
+    box-shadow: 0 5px 10px black;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+.swiper-pagination{
+
+display: none;
+}
+.swiper-pagination-bullet{
+
+display: none;
+}
+.swiper-button-next, .swiper-button-prev{
+
+display: none;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+
+display: none;
+}
+
+
+/* INICIO ESTILIZAÇÃO MENU MOBILE*/
+
+
+.img-menu-mobile{
+    width: 250px;
+}
+
+.container-menu-mobile{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.header-menu-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #CF97A0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128 ,128, 0.177);
+    z-index: 2023;
+    .container-menu-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+article{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color:#CF97A0;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 40px 15px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2023;
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        
+        li{
+            a{
+                color: white;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.opened-menu{
+    article{
+    transform: translateY(0%);
+    opacity: 1;
+}
+}
+
+.hamburger{
+    padding: 0;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: white;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+background-color: white;
+}
+
+/* FIM ESTILIZAÇÃO MENU MOBILE*/
+
+
+/* inicio do botao subir topo */
+
+#btnTop {
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 72px;
+    right: 20px;
+    background-color: #C61883;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+#btnTop i{
+    display: flex;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+#btnTop:hover {
+    background-color: #C61883;
+}
+
+/* fim do botao subir topo */
+
+
+} 
+
+
+/* INICIO PARA ESCONDER MENU DESKTOP ESTILIZAÇÃO MENU MOBILE*/
+
+@media screen and (min-width: 1070px) {
+
+    .header-menu-mobile{
+        display: none;
+    }
+    article{
+        display: none;
+    }
+
+
+    .titulo-desktop{
+        color: black;
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: -70px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    .titulo-desktop span{
+        color: #C61883;
+    }
+
+}
+
+/*FIM PARA ESCONDER MENU DESKTOP ESTILIZAÇÃO MENU MOBILE*/
